@@ -9,20 +9,6 @@
     margin: 0 3px !important;
     padding: 0;
 }
-/* 修改首页轮播的标题大小 */
-@media only screen and (max-width: 601px) {
-    .bg-cover .title {
-        font-size: 2.5rem;
-    }
-}
-
-/* 修改博客标题的字体大小 */
-@media only screen and (max-width: 601px) {
-    header .brand-logo .logo-span {
-        font-size: 1.5rem;
-    }
-}
-
 .github-emoji:hover{
     animation: emoji-face 5s infinite ease-in-out;
 }

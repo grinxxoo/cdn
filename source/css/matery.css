@@ -32,6 +32,7 @@
         max-width: 1250px;
     }
 }
+
 body {
     background-color: #eaeaea;
     margin: 0;
@@ -266,12 +267,12 @@ mark {
 
 .bg-color {
     background-image: linear-gradient(to right, #5f8691 0%, #71bbb6 100%);
-    opacity: 0.9;
+    opacity: 0.8;
     /* 透明度*/
 }
 
 .text-color {
-    color: #0f9d58 !important;
+    color: #26a69a !important;
 }
 
 .white-color {
@@ -322,7 +323,9 @@ header .brand-logo .logo-img {
 }
 
 header .brand-logo .logo-span {
-    color: red; 
+    background: linear-gradient(to right, red, #ffa726, #48D1CC);
+    -webkit-background-clip: text;
+    color: transparent; 
     font-size: 2rem;
 }
 
@@ -954,7 +957,7 @@ article .article-tags .chip {
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 2px;
-    color: #42b983;
+    color: #26a69a;
     background: #fff;
     border: 1px solid;
     transition: all 0.6s ease-in-out;
@@ -967,12 +970,12 @@ article .article-tags .chip {
 
 #artDetail .post-cate {
     float: right;
-    color: #42b983;
+    color: #26a69a;
 }
 
 #artDetail .post-cate a {
     padding-right: 5px;
-    color: #42b983;
+    color: #26a69a;
     font-weight: 500;
 }
 
@@ -1054,7 +1057,7 @@ article .article-tags .chip {
 
 #artDetail .reprint a {
     font-size: 1.05rem;
-    color: #42b983;
+    color: #66b1ff;
     font-weight: 500;
 }
 
@@ -1070,7 +1073,7 @@ article .article-tags .chip {
 
 #articleContent a {
     padding: 0 2px;
-    color: #42b983;
+    color: #66b1ff;
     font-weight: 500;
     text-decoration: underline;
     word-wrap: break-word;
@@ -1116,7 +1119,7 @@ article .article-tags .chip {
 }
 
 #articleContent table {
-	width: 100%;
+    width: 100%;
     display: block;
     border-collapse: collapse;
     border-spacing: 0;
@@ -1140,14 +1143,14 @@ thead {
 #articleContent table th {
     background-color: #f2f2f2;
     min-width: 80px;
-	border: 1px solid #dfe2e5;
-	padding: 6px 6px;
+    border: 1px solid #dfe2e5;
+    padding: 6px 6px;
 }
 
 #articleContent table td {
     min-width: 80px;
-	border: 1px solid #dfe2e5;
-	padding: 6px 6px;
+    border: 1px solid #dfe2e5;
+    padding: 6px 6px;
 }
 
 #articleContent [type="checkbox"]:not(:checked),
@@ -1504,7 +1507,7 @@ thead {
 }
 
 .post-statis .statis .count a {
-    color: #42b983;
+    color: #26a69a;
 }
 
 .post-statis .statis .name {
@@ -1525,8 +1528,8 @@ thead {
     margin: 0 0.5rem;
     padding: 0;
     color: #fff;
-    border: 1px solid #0f9d58;
-    background: radial-gradient(#4cbf30, #0f9d58);
+    border: 1px solid #26a69a;
+    background: radial-gradient(#26a69a, #26a69a);
     font-size: 0.9rem;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .21), 0 2px 3px rgba(0, 0, 0, .1);
@@ -1584,7 +1587,7 @@ thead {
 .my-skills .title,
 .my-gallery .title {
     font-size: 2rem;
-    margin-bottom: 2.25rem;
+    margin-bottom: 1.00rem;
 }
 
 .my-projects .info {
@@ -1799,7 +1802,7 @@ footer .copy-right {
 }
 
 .top-scroll .btn-floating {
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%);
+    background: linear-gradient(to bottom right, #679399 0%, #6fb1af 100%);
     width: 48px;
     height: 48px;
 }
@@ -2037,3 +2040,64 @@ footer .copy-right {
     padding: 0px;
     margin: 0px;
 }
+
+/*直达评论按钮样式*/
+.comment-scroll {
+    position: fixed;
+    right: 15px;
+    bottom: 138px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 998;
+}
+
+.comment-scroll .btn-floating {
+    background: linear-gradient(to bottom right, #5f8691 0%, #71bbb6 100%);
+    width: 48px;
+    height: 48px;
+}
+
+.comment-scroll .btn-floating i {
+    line-height: 48px;
+    font-size: 1.8rem;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar-thumb {
+    background-color: #26a69a;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    border-radius: 3em;
+}
+::-webkit-scrollbar-track {
+    background-color: #89c4c0;
+    opacity: 0.8;
+    border-radius: 3em;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 15px;
+}
+
+
+     /* valine 评论框增加背景图片 */
+   
+    #vcomments .vwrap .vheader{width: 90%;bottom:0;position: absolute;}
+
+    #vcomments .vinput {padding: 0px 11px; text-align: center; color: #26a69a;}
+
+    #vcomments .vwrap .vedit .vctrl{margin-top:-44px;right:0;position:absolute;margin-right:-3px;}
+
+    #vcomments input[type=text],
+
+    #vcomments input[type=email],
+
+    #vcomments input[type=url],
+
+    #vcomments textarea {
+        box-sizing: border-box;
+    }
+ 
+    /* 修复评论第一行位置错位 */
+    .v .vlist .vcard {
+    padding-top: 2.5em !important ;
+    }
