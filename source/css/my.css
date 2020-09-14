@@ -70,23 +70,11 @@
     }
 }
 
-/*在线聊天样式*/
-#daodream-container .daodream-launcher-button {
-    position: absolute;
-    right: -2PX;
-    bottom: 105PX;
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
-    background: linear-gradient(to bottom right, #679399 0%, #6fb1af 100%);
-    background-image: linear-gradient(to right, #5f8691 0%, #71bbb6 100%);
-}
-
 /*直达评论按钮样式*/
 .comment-scroll {
     position: fixed;
     right: 15px;
-    bottom: 148px;
+    bottom: 136px;
     padding-top: 15px;
     margin-bottom: 0;
     z-index: 998;
